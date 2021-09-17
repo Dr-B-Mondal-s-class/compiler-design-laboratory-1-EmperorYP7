@@ -20,15 +20,17 @@ eol \n
 %%
 
 int main(){
+    yyin = fopen("input.txt", "r");
+    yyout = fopen("output.txt", "w");
     yylex();
-    printf("No. of lexemes=%d\n",keyCount+intCount+floatCount+varCount+opCount); 
-    printf("No. of keywords=%d\n",keyCount);
-    printf("No. of identifiers=%d\n",varCount);
-    printf("No. of integers=%d\n",intCount);
-    printf("No. of fractions=%d\n",floatCount);
-    printf("No. of operators=%d\n",opCount);
+    printf("%d lexemes present\n", keyCount + intCount + floatCount + varCount + opCount);
+    printf("%d keywords present\n",keyCount);
+    printf("%d identifiers present\n",varCount);
+    printf("%d integers present\n",intCount);
+    printf("%d fractions present\n",floatCount);
+    printf("%d operators present\n\n",opCount);
 }
 
 int yywrap(void) {
-   return 0;
+   return 1;
 }
