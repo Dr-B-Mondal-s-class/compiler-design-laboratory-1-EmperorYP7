@@ -96,15 +96,17 @@
        [Source Code](./arithmetic_logical_operators/arithmetic_logical_operators.l) <br>
        [Output](./arithmetic_logical_operators/output.png) <br>
 
-        ```
         Sample Input:
+        ```
         +
         &&
         *
         ||
         @
+        ```
 
         Sample Output:
+        ```
         It's a valid arithmetic operator
         It's a valid logical operator
         It's a valid arithmetic operator

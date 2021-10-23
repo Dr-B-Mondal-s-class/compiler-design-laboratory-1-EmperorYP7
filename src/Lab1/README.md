@@ -4,6 +4,7 @@
 | :--: | :---- | :--: | :--: | :--: |
 | 1. | Write a program to recognize strings with numbers or alphabets | 07/08/2021 | [Link](./recognizeDigits_Alphabets/recognizeDigits_Alphabets.l) | [Link](./recognizeDigits_Alphabets/output.png)
 
+[Link to Lab2](../Lab2)
 
 ## Sample Input/Output
 
@@ -23,5 +24,3 @@
     Contains only letter(s)
     Contains both letter(s) and digit(s) and/or special character(s)
     ```
-
-[Link to Lab2](../Lab2)

@@ -7,10 +7,12 @@ logical_op  ("=="|"!="|"&&"|"!"|"||")
 .+ {printf("Neither logical nor arithmetic operator!\n");};
 %%
 
-int main(){
+int main()
+{
     yylex();
 }
 
-int yywrap(void) {
+int yywrap(void)
+{
    return 0;
 }

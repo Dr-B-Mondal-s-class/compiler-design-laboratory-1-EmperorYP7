@@ -16,6 +16,7 @@ int main()
     yylex();
 }
 
-int yywrap(void){
+int yywrap(void)
+{
     return 0;
 }
