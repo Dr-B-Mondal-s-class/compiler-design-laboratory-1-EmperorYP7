@@ -4,7 +4,7 @@
 | :--: | :---- | :--: | :--: | :--: |
 | 1. | WAP to recognize digit and non-digit | 13/08/2021 | [Link](./Digit_NonDigit/Digit_NonDigit.l) | [Link](./Digit_NonDigit/output.png)
 | 2. | WAP to recognize whether string contain only english letters or not. | 13/08/2021 |[Link](./onlyLetters/onlyLetters.l) | [Link](./onlyLetters/output.png)
-| 3. | WAP to recognize whether string contain only english letters, only digits, or both.| 13/08/2021 |[Link]() | [Link]()
+| 3. | WAP to recognize whether string contain only english letters, only digits, or both.| 13/08/2021 |[Link](./upperCaseLowerCase/upperCaseLowerCase.l) | [Link](./upperCaseLowerCase/output.png)
 
 [Link to Lab3](../Lab3)
 

@@ -1,7 +1,3 @@
-%{
-  //macros
-%}
-
 PLUS [\+]
 MINUS [\-]
 GE  ">="
