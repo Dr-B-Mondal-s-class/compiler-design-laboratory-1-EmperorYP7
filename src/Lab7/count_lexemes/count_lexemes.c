@@ -1,6 +1,6 @@
-#line 1 "./count_lexemes.c"
+#line 1 "count_lexemes.c"
 
-#line 3 "./count_lexemes.c"
+#line 3 "count_lexemes.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -493,12 +493,12 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "./count_lexemes.l"
-#line 2 "./count_lexemes.l"
+#line 1 "count_lexemes.l"
+#line 2 "count_lexemes.l"
 //macros
 int keyCount=0,varCount=0,intCount=0,floatCount=0,opCount=0;
-#line 500 "./count_lexemes.c"
-#line 501 "./count_lexemes.c"
+#line 500 "count_lexemes.c"
+#line 501 "count_lexemes.c"
 
 #define INITIAL 0
 
@@ -715,10 +715,10 @@ YY_DECL
 		}
 
 	{
-#line 11 "./count_lexemes.l"
+#line 11 "count_lexemes.l"
 
 
-#line 721 "./count_lexemes.c"
+#line 721 "count_lexemes.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -777,41 +777,41 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 13 "./count_lexemes.l"
+#line 13 "count_lexemes.l"
 {keyCount++;} 
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 14 "./count_lexemes.l"
+#line 14 "count_lexemes.l"
 {varCount++;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 15 "./count_lexemes.l"
+#line 15 "count_lexemes.l"
 {intCount++;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 16 "./count_lexemes.l"
+#line 16 "count_lexemes.l"
 {floatCount++;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 17 "./count_lexemes.l"
+#line 17 "count_lexemes.l"
 {opCount++;}
 	YY_BREAK
 case 6:
 /* rule 6 can match eol */
 YY_RULE_SETUP
-#line 18 "./count_lexemes.l"
+#line 18 "count_lexemes.l"
 {return 0;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 20 "./count_lexemes.l"
+#line 20 "count_lexemes.l"
 ECHO;
 	YY_BREAK
-#line 814 "./count_lexemes.c"
+#line 814 "count_lexemes.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1816,21 +1816,22 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 20 "./count_lexemes.l"
+#line 20 "count_lexemes.l"
 
 
 int main(){
     yyin = fopen("input.txt", "r");
     yyout = fopen("output.txt", "w");
-    yylex();
-    printf("%d lexemes present\n", keyCount + intCount + floatCount + varCount + opCount);
-    printf("%d keywords present\n",keyCount);
-    printf("%d identifiers present\n",varCount);
-    printf("%d integers present\n",intCount);
-    printf("%d fractions present\n",floatCount);
-    printf("%d operators present\n\n",opCount);
+    yylex ();
+    fprintf(yyout,"%d lexemes present\n", keyCount + intCount + floatCount + varCount + opCount);
+    fprintf(yyout,"%d keywords present\n",keyCount);
+    fprintf(yyout,"%d identifiers present\n",varCount);
+    fprintf(yyout,"%d integers present\n",intCount);
+    fprintf(yyout,"%d fractions present\n",floatCount);
+    fprintf(yyout,"%d operators present\n\n",opCount);
 }
 
-int yywrap(void) {
+int yywrap(void)
+{
    return 1;
 }

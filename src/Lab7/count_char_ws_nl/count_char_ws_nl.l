@@ -13,13 +13,12 @@ int count = 0, ws = 0, tab = 0, lines = 0;
 int main()
 {
     yyin = fopen("input.txt", "r");
+    yyout = fopen("output.txt", "w");
     yylex();
-    printf("%d character(s) detected\n", count);
-    printf("%d whitespace(s) detected\n", ws);
-    printf("%d tab(s) detected\n", tab);
-    printf("%d line(s) detected\n\n", lines);
-    fclose(yyin);
-    return 0;
+    fprintf(yyout,"%d character(s) detected\n", count);
+    fprintf(yyout,"%d whitespace(s) detected\n", ws);
+    fprintf(yyout,"%d tab(s) detected\n", tab);
+    fprintf(yyout,"%d line(s) detected\n\n", lines);
 }
 
 int yywrap(void)

@@ -22,15 +22,16 @@ eol \n
 int main(){
     yyin = fopen("input.txt", "r");
     yyout = fopen("output.txt", "w");
-    yylex();
-    printf("%d lexemes present\n", keyCount + intCount + floatCount + varCount + opCount);
-    printf("%d keywords present\n",keyCount);
-    printf("%d identifiers present\n",varCount);
-    printf("%d integers present\n",intCount);
-    printf("%d fractions present\n",floatCount);
-    printf("%d operators present\n\n",opCount);
+    yylex ();
+    fprintf(yyout,"%d lexemes present\n", keyCount + intCount + floatCount + varCount + opCount);
+    fprintf(yyout,"%d keywords present\n",keyCount);
+    fprintf(yyout,"%d identifiers present\n",varCount);
+    fprintf(yyout,"%d integers present\n",intCount);
+    fprintf(yyout,"%d fractions present\n",floatCount);
+    fprintf(yyout,"%d operators present\n\n",opCount);
 }
 
-int yywrap(void) {
+int yywrap(void)
+{
    return 1;
 }

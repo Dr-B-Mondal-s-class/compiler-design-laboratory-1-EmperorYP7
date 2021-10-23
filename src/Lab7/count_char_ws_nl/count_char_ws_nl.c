@@ -439,8 +439,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "./count_char_ws_nl.l"
-#line 2 "./count_char_ws_nl.l"
+#line 1 "count_char_ws_nl.l"
+#line 2 "count_char_ws_nl.l"
 #include <stdio.h>
 int count = 0, ws = 0, tab = 0, lines = 0;
 #line 446 "count_char_ws_nl.c"
@@ -661,7 +661,7 @@ YY_DECL
 		}
 
 	{
-#line 6 "./count_char_ws_nl.l"
+#line 6 "count_char_ws_nl.l"
 
 #line 666 "count_char_ws_nl.c"
 
@@ -723,27 +723,27 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 7 "./count_char_ws_nl.l"
+#line 7 "count_char_ws_nl.l"
 {++lines;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 8 "./count_char_ws_nl.l"
+#line 8 "count_char_ws_nl.l"
 {++tab;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 9 "./count_char_ws_nl.l"
+#line 9 "count_char_ws_nl.l"
 {++ws;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 10 "./count_char_ws_nl.l"
+#line 10 "count_char_ws_nl.l"
 {++count;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 11 "./count_char_ws_nl.l"
+#line 11 "count_char_ws_nl.l"
 ECHO;
 	YY_BREAK
 #line 749 "count_char_ws_nl.c"
@@ -1751,19 +1751,18 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 11 "./count_char_ws_nl.l"
+#line 11 "count_char_ws_nl.l"
 
 
 int main()
 {
     yyin = fopen("input.txt", "r");
+    yyout = fopen("output.txt", "w");
     yylex();
-    printf("%d character(s) detected\n", count);
-    printf("%d whitespace(s) detected\n", ws);
-    printf("%d tab(s) detected\n", tab);
-    printf("%d line(s) detected\n\n", lines);
-    fclose(yyin);
-    return 0;
+    fprintf(yyout,"%d character(s) detected\n", count);
+    fprintf(yyout,"%d whitespace(s) detected\n", ws);
+    fprintf(yyout,"%d tab(s) detected\n", tab);
+    fprintf(yyout,"%d line(s) detected\n\n", lines);
 }
 
 int yywrap(void)
