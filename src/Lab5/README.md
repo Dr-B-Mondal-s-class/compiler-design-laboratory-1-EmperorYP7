@@ -14,34 +14,35 @@
        [Source Code](./count_lexemes/count_lexemes.l) <br>
        [Output](./count_lexemes/output.png) <br>
 
-        Sample Input:
-        ```
-        int yashRoll = 30+9;
-        ```
+Sample Input:
+```
+int yashRoll = 30+9;
+```
 
-        Sample Output:
-        ```
-        No. of lexemes=7
-        No. of keywords=1
-        No. of identifiers=1
-        No. of integers=2
-        No. of fractions=0
-        No. of operators=3
-        ```
+Sample Output:
+
+```
+No. of lexemes=7
+No. of keywords=1
+No. of identifiers=1
+No. of integers=2
+No. of fractions=0
+No. of operators=3
+```
 
 2. Write a program to verify valid url or not. <br>
        Date - 03/09/2021 <br>
        [Source Code](./valid_url/valid_url.l)
        [Output](./valid_url/output.png)<br>
 
-        Sample Input:
-        ```
-        https://www.google.com
-        https://www.google
-        ```
+Sample Input:
+```
+https://www.google.com
+https://www.google
+```
 
-        Sample Output:
-        ```
-        Valid URL
-        Invalid URL
-        ```
+Sample Output:
+```
+Valid URL
+Invalid URL
+```

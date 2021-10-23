@@ -53,17 +53,17 @@
    [Output](./count_vowels_consonant/output.png)<br>
 
     Sample Input:
-    ```txt
+```txt
     Yash Pandey 2019UGCS039R
-    ```
+```
 
 Sample Output:
-    ```txt
+```txt
     Following Characters detected:
       No. of vowel: 4
       No. of consonants: 11
       Other Characters: 9
-    ```
+```
 
 4. Write a program to count no. of characters, whitespace, tabs and digits in a string.</br>
    Date - 20/08/2021 </br>

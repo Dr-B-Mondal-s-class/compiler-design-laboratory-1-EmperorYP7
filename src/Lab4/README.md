@@ -17,99 +17,100 @@
        [Source Code](./recognize_float_int/recognize_float_int.l) <br>
        [Output](./recognize_float_int/output.png) <br>
 
-        Sample Input:
-        ```
+Sample Input:
+```
         001
         123.1
         Yash
-        ```
-        Sample Output:
-        ```
+```
+Sample Output:
+```
         001 is of int type
         123.1 is of float type
         Yash neither float nor int
-        ```
+```
 
 2. Write a program to verify a valid identifier.</br>
        Date - 27/08/2021 </br>
        [Source Code](./verify_identifier/verify_identifier.l) <br>
        [Output](./verify_identifier/output.png) <br>
 
-        Sample Input:
-        ```txt
+Sample Input:
+```txt
         var
         0var
         Var_check0
         Yash_Pandey
-        ```
+```
 
-        Sample Output:
-        ```txt
+Sample Output:
+```txt
         A valid identifier
         Not a valid identifier
         A valid identifier
         A valid identifier
-        ```
+```
 
 3. Write a program to verify a valid keyword.</br>
        Date - 27/08/2021 </br>
        [Source Code](./verify_keyword/verify_keyword.l) <br>
        [Output](./verify_keyword/output.png) <br>
 
-        ```
-        Sample Input:
+Sample Input:
+```
         bool
         boool
         tushar
         for
-
-        Sample Output:
+```
+Sample Output:
+```
         A keyword
         Not a keyword
         Not a keyword
         A keyword
-        ```
+```
 
 4. Write a program to recognize basic operators (PLUS(+), MINUS(-), GE(>=), LE(<=)).</br>
        Date - 27/08/2021 </br>
        [Source Code](./recognize_basic_operators/recognize_basic_operators.l) <br>
        [Output](./recognize_basic_operators/output.png) <br>
 
-        Sample Input:
-        ```
+Sample Input:
+```
         +
         -
         >=
         <=
-        ```
+```
 
-        Sample Output:
-        ```
+Sample Output:
+```
         It's a PLUS operator
         It's a MINUS operator
         Greater or equal to operator
         Lesser or equal to operator
-        ```
+```
 
 5. Write a program to determine input operators whether arithmetic or logical.</br>
        Date - 27/08/2021 </br>
        [Source Code](./arithmetic_logical_operators/arithmetic_logical_operators.l) <br>
        [Output](./arithmetic_logical_operators/output.png) <br>
 
-        Sample Input:
-        ```
+Sample Input:
+```
         +
         &&
         *
         ||
         @
-        ```
+```
 
-        Sample Output:
-        ```
+Sample Output:
+```
         It's a valid arithmetic operator
         It's a valid logical operator
         It's a valid arithmetic operator
         It's a valid logical operator
         Neither logical nor arithmetic operator!
-        ```
+```
